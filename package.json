@@ -1,38 +1,59 @@
 {
   "name": "w2g",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "express-pino-logger": "^6.0.0",
+    "http-server": "^0.12.3",
+    "mime": "^2.5.2",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "react-youtube": "^7.13.1",
+    "socket.io": "^4.0.0",
+    "socket.io-client": "^4.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node src/server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "concurrently \"nodemon ./src/server/server.js\" \"react-scripts start\"",
+    "eject": "react-scripts eject",
+    "heroku-build": "npm install && npm run build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "express": "^4.17.1",
+    "express-pino-logger": "^6.0.0",
+    "node-env-run": "^4.0.2",
+    "nodemon": "^1.19.4",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^2.1.0",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  },
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }

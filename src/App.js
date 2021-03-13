@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import HomeScreen from './components/HomeScreen';
+import WelcomeScreen from './components/WelcomeScreen';
+
+import './css/style.scss';
+class App extends Component {
+
+  state = {
+    username: '',
+    room: '',
+    currentScreen: 'default',
+  }
+
+  onSubmit = (username, room) => {
+    this.setState({
+      username,
+      room,
+      currentScreen: 'HomeScreen'
+    })
+  }
+
+  render() {
+    var screen;
+    if (this.state.currentScreen === 'default') {
+      screen = <WelcomeScreen onSubmit={this.onSubmit}/>
+    }
+    if (this.state.currentScreen === 'HomeScreen') {
+      screen = <HomeScreen room={this.state.room} username={this.state.username}/>
+    }
+
+    return (
+      <div className="screen">
+        {screen}
+      </div>
+    )
+  }
 }
 
 export default App;
