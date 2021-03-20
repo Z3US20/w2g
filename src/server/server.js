@@ -29,7 +29,7 @@ io.on('connection', function(socket) {
 
     const message = socket.username + " joined to watch.";
     io.in(socket.room).emit(RECEIVED_MESSAGE, {
-      username: 'Server',
+      username: 'ZEUS',
       text: message
     });
 

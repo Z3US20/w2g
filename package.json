@@ -1,9 +1,8 @@
 {
   "name": "w2g",
-  "homepage": "https://z3us20.github.io/w2g",
+  "homepage": ".",
   "version": "0.1.0",
   "node": "15.11.0",
-  "type": "module",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -16,7 +15,6 @@
     "http-server": "^0.12.3",
     "mime": "^2.5.2",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7",
     "pg": "^8.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -50,7 +48,6 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.1",
     "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.1.0",
     "express": "^4.17.1",
     "express-pino-logger": "^6.0.0",
     "gh-pages": "^3.1.0",
@@ -62,8 +59,7 @@
     "pino-colada": "^2.1.0",
     "postcss": "^8.2.7",
     "tailwindcss": "^2.0.3",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.5.0",
+    "webpack": "^5.26.3",
     "webpack-dev-server": "^3.11.1"
   },
   "development": [

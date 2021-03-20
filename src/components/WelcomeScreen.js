@@ -37,7 +37,7 @@ class WelcomeScreen extends Component {
 
   render() {
     return (
-
+<div class="bodjy">
 <div class="container">
   <form onSubmit={this.handleSubmit} >
   <h1>W<font color="orange">.2.</font>G</h1>
@@ -48,6 +48,7 @@ class WelcomeScreen extends Component {
     <button type="submit">Let me in!</button>
     <button  type="button" onClick={this.handleRoomNameClick}>Random room id</button>
   </form>  
+</div>
 </div>
     )
   }

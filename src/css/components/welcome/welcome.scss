@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-$background-color: #181818;
+
+$background-color: rgba(1,4,9,0.8);
 $text-color: #FFFFFF;
-$primary-color: #3D3D3D;
-$secondary-color: #212121;
+$blue-prim: #1f6feb;
+$blue-color: #388bfd;
+$blue-color2: #58a6ff;
+$blue-color3: #79c0ff;;
 $orange: #ffa62b;
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: $background-color;
 }
 *:focus{
     outline: none;
+
 }
 
 .container{
@@ -22,7 +27,7 @@ $orange: #ffa62b;
 .container form{
     width: 300px;
     height: 250px;
-    background-color: $secondary-color;
+    background-color: $background-color;
     border-radius: 15px;
 }
 .container input {
@@ -31,7 +36,6 @@ $orange: #ffa62b;
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: $background-color;
     color: $text-color;
     border: none;
     border-radius: 5px;
@@ -41,9 +45,9 @@ $orange: #ffa62b;
 .container button{
     height: 30px;
     width: 40%;
-    border:none;
-    background-color: $text-color;
-    color:$primary-color;
+    background-color: $background-color;
+    color: $blue-prim;
+    border: 1px solid $blue-color;
     display: inline;
     justify-content: center;
     align-items: center;
@@ -52,8 +56,9 @@ $orange: #ffa62b;
     margin: 20px 0 0 20px;
 }
 .container button:hover{
-    background-color: $orange;
-    color: $text-color;
+    background-color: $background-color;
+    color: $blue-color3;
+    border-color: $blue-color3;
 }
 h1{
     text-align: center;
