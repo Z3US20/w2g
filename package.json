@@ -60,7 +60,6 @@
     "pino-colada": "^2.1.0",
     "postcss": "^8.2.7",
     "tailwindcss": "^2.0.3",
-    "webpack": "^5.27.2",
     "webpack-dev-server": "^3.11.1"
   },
   "development": [
