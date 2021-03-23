@@ -2,6 +2,7 @@
   "name": "w2g",
   "homepage": "https://w2g-app.herokuapp.com/",
   "version": "0.1.0",
+  "type": "module",
   "node": "15.11.0",
   "private": true,
   "dependencies": {
