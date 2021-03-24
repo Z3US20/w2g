@@ -5,6 +5,7 @@ const server = require('http').Server(app);
 const io = module.exports.io = require('socket.io')(server);
 require('dotenv').config();
 
+
 const { PLAY, PAUSE, SYNC_TIME, NEW_VIDEO,
    ASK_FOR_VIDEO_INFORMATION, SYNC_VIDEO_INFORMATION,
    JOIN_ROOM, SEND_MESSAGE, RECEIVED_MESSAGE, SEND_USERNAME, ASK_FOR_USERNAME } = require('../Constants');

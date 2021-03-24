@@ -18,7 +18,7 @@
 .container form {
   width: 300px;
   height: 250px;
-  background-color: #212121;
+  background-color: #161B22;
   border-radius: 15px;
 }
 
@@ -28,7 +28,7 @@
   display: block;
   justify-content: center;
   align-items: center;
-  background-color: #181818;
+  background-color: #0D1117;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -51,7 +51,7 @@
 }
 
 .container button:hover {
-  background-color: #ffa62b;
+  background-color: #388bfd;
   color: #FFFFFF;
 }
 

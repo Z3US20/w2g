@@ -24,7 +24,7 @@
 .container form {
   width: 300px;
   height: 250px;
-  background-color: #212121;
+  background-color: #161B22;
   border-radius: 15px;
 }
 
@@ -38,7 +38,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #181818;
+  background-color: #0D1117;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;

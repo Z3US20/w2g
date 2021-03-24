@@ -9,7 +9,7 @@
 }
 
 input {
-  background-color: #212121;
+  background-color: #161B22;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -44,7 +44,7 @@ input {
   overflow: auto;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: #212121;
+  background-color: #161B22;
   border: 1px solid #ffa62b;
   border-radius: 10px;
 }
@@ -61,7 +61,7 @@ input {
 }
 
 body {
-  background-color: #181818;
+  background-color: #0D1117;
 }
 
 .yt {
