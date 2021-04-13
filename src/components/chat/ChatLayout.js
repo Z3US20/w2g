@@ -28,6 +28,7 @@ export class ChatLayout extends Component {
         </div>
         </div>
         <div className="chat-box">
+          
               <MessageList messages={this.props.messages}/>
               <SendMessage className="chat-send-msg" sendMessage={this.sendMassage}/> 
         </div>

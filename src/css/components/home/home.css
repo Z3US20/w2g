@@ -26,7 +26,7 @@ input {
 .url-btn {
   height: 35px;
   width: 100px;
-  background-color: #ffa62b;
+  background-color: #388bfd;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -45,8 +45,12 @@ input {
   margin-top: 20px;
   margin-bottom: 10px;
   background-color: #161B22;
-  border: 1px solid #ffa62b;
+  border: 1px solid #388bfd;
   border-radius: 10px;
+}
+
+.message-box {
+  padding: 10px 10px 0 10px;
 }
 
 .message-container {

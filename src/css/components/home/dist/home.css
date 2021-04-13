@@ -49,6 +49,10 @@ input {
   border-radius: 10px;
 }
 
+.message-box {
+  padding: 10px 10px 0 10px;
+}
+
 .message-container {
   margin-top: 3px;
   margin-right: 10px;

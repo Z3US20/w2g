@@ -42,7 +42,7 @@ class WelcomeScreen extends Component {
   <form onSubmit={this.handleSubmit} >
   <h1>W<font color="orange">.2.</font>G</h1>
     <div className="welcome-input">
-    <input autocomplete="off" value={this.state.yourname} onChange={this.handleChange}  placeholder="Name" required id="yourname"></input> <br></br>
+    <input autocomplete="off" value={this.state.yourname} onChange={this.handleChange}  placeholder="Name" required id="yourname"></input> 
     <input autocomplete="off" value={this.state.roomid} onChange={this.handleChange}  placeholder="Room id" required id="roomid"></input>
     </div>
     <button type="submit">Let me in!</button>

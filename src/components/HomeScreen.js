@@ -189,7 +189,7 @@ export class HomeScreen extends Component {
           
 
           <form onSubmit={this.handleSubmit}>
-            <input autocomplete="off" className="url-input" type="text" placeholder="Insert Youtube URL" id="videoUrl" value={this.state.videoUrl} onChange={this.handleChange}></input>
+            <input autocomplete="off" className="url-input" type="submit" placeholder="Insert Youtube URL" id="videoUrl" value={this.state.videoUrl} onChange={this.handleChange}></input>
             <button  type="submit" className="url-btn">New video</button>
           </form>
           </div>

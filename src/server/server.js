@@ -1,3 +1,4 @@
+
 const express = require('express');
 const { Client } = require('pg');
 const app = express();
@@ -28,9 +29,9 @@ io.on('connection', function(socket) {
     socket.room = data.room;
     socket.username = data.username;
 
-    const message = socket.username + " joined to watch.";
+    const message = socket.username + " joined.";
     io.in(socket.room).emit(RECEIVED_MESSAGE, {
-      username: 'ZEUS',
+      username: 'Server',
       text: message
     });
 
@@ -71,7 +72,7 @@ io.on('connection', function(socket) {
 
   socket.on('disconnect', () => {
     client.connect();
-
+    
     client.query('SELECT table_name FROM information_schema.tables;', (err, res) => {
       if (err) throw err;
 

@@ -39,9 +39,9 @@ io.on('connection', function (socket) {
     socket.join(data.room);
     socket.room = data.room;
     socket.username = data.username;
-    var message = socket.username + " joined to watch.";
+    var message = socket.username + " joined.";
     io["in"](socket.room).emit(RECEIVED_MESSAGE, {
-      username: 'ZEUS',
+      username: 'Server',
       text: message
     });
     io["in"](socket.room).emit(ASK_FOR_USERNAME);

@@ -33,21 +33,22 @@
   border: none;
   border-radius: 5px;
   text-align: center;
-  margin: 0 0 0 22.5px;
+  margin: 20px auto;
 }
 
 .container button {
   height: 30px;
   width: 40%;
   border: none;
-  background-color: #FFFFFF;
-  color: #3D3D3D;
+  background-color: #0D1117;
+  color: white;
   display: inline;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  border: 1px solid #388bfd;
   text-align: center;
-  margin: 20px 0 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .container button:hover {
